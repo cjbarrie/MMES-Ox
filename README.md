@@ -3,4 +3,4 @@ This repo contains teaching materials for the Modern Middle Eastern Studies core
 
 ## Weekly seminar readings and sections
 
-1. Introduction: \[[Section](https://raw.githack.com/cjbarrie/MMES-Ox/main/MMES-2021/_book/introduction.html)\]
+1. Introduction: \[[Section](https://rawcdn.githack.com/cjbarrie/MMES-Ox/67a3daa11264bcce16d328046f7da0b5f2e490cb/MMES-2021/_book/introduction.html)\]
