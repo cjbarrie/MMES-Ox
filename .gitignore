@@ -1,5 +1,6 @@
-.Rproj.user/
-MMES-Ox.Rproj
+.Rproj.user/*
+*.Rproj
 .Rhistory
 .RData
 .Ruserdata
+.Rproj.user
