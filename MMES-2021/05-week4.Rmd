@@ -1,0 +1,34 @@
+
+# Week 4: Online and text data {.unnumbered}
+
+For the final week, we will be looking at another type of data that is becoming increasingly commonly used (especially given the growing availability of large text corpuses on Twitter, Facebook, Google Books etc.). This is text data. Increasingly, these data come from online sources and are being used to answer questions of social scientific relevance. When online and other digitally sourced data are repurposed to these ends, we often refer to them more generally as "digital trace" data. For an effective review of recent trends in this fast moving domain, see the articles by @Lazer2020b and @Edelmann2020. For a brilliant book-length introduction to this new domain of social research, look no further than the book by @Salganik2018.
+
+We will be looking at two main case study articles. The first, by @Nielsen2019, does not involve much online material but does take its source material from a set of texts sourced online from Salafi preachers to argue that social movements, even the more patriarchal among them, might make use of female preachers for pragmatic reasons. 
+
+The paper by @Pan2020 makes use of Twitter data to gauge the impact of repression on online behaviour in Saudi Arabia. For both papers, it is worth considering questions of sample selection, language translation, and the accuracy of some forms of unsupervised machine learning techniques. These are discussed in the three general readings by @Grimmer2013, @DiMaggio2015, and @Lucas2015.
+
+The further readings by @Siegel2020a and @Kubinec2021 demonstrate how we construct pretty elaborate research designs from these online materials. Indeed, coming back full circle, we see that we are able effectively to recreate an experimental setting using online data and effectively measure attitudes using digital trace data alone. 
+
+We will also be able to use a portion of this week and my office hours afterward to discuss any questions or concerns you may have regarding the assessment.
+
+**Questions to consider in the seminar**: Does social media data constitute a valid sample? How do we verify the validity of our sample when it comes to text data more generally? What types of inferences can we make from these datasets? Can we rely on the automatic coding of text data? How might text data be useful for questions of historical and social scientific interest?
+
+
+**Required reading**:
+
+- @Nielsen2019
+- @Pan2020
+
+**General reading**:
+
+- @DiMaggio2015
+- @Edelmann2020
+- @Grimmer2013
+- @Lazer2020b
+- @Lucas2015
+- @Salganik2018
+
+**Additional case studies reading**:
+
+- @Siegel2020a
+- @Kubinec2021

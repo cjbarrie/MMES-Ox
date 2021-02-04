@@ -1,0 +1,40 @@
+# Introduction {.unnumbered}
+
+This course will provide you with an introduction to quantitative research methods in the study of the Middle East and North Africa (MENA). The course is *not* a comprehensive training in the technical aspects of quantitative research methods. What the course *will* provide is an introduction to what quantitative research looks like when applied to questions of substantive interest in the study of the MENA. 
+
+For each week we will discuss several articles. The aim in setting these readings is to get you to be able to understand, articulate, and identify the underlying assumptions and structure of research employing quantitative techniques. This exercise will also help you develop an ability to criticize this research---from the perspective both of quantitative research design generally and Middle Eastern Studies specifically. Put another way, we will be discussing *both* the validity of a given research design generally *and* any problems arising from the application of such methods in a MENA context specifically. 
+
+Finally, I will be asking you in take-home exercises to reproduce, using the <tt>R</tt> programming language, some of the data visualizations and findings from the articles we discuss each week. So, the aims of this course in brief, then:
+
+- An ability to understand use the language of quantitative research design.
+- An ability to understand and criticize the underlying assumptions and structure of a quantitative research design.
+- An ability to reproduce the results of published research using the <tt>R</tt> programming language.
+
+Each week the readings selected are aimed at the analysis of a different type of data. Here, I aim to convince you that large-N quantitative analyses can rely on diverse forms of data. In the last instance, however, what we are working with are quantitative information arranged in the form of a spreadsheet. In <tt>R</tt>, we usually refer to these spreadsheets as ``dataframes." These are, quite simply, sets of variables (vectors of numbers or words), stored as columns alongside each other. Nothing more, nothing less!
+
+What we'll discover over the course of this module is that these data, while similar in appearance, permit us to answer an extremely diverse set of questions. We'll see this diversity in terms of the level of analysis (e.g., are we measuring things at the individual level, at the community level, or at the level of countries?); the types of measurement made (e.g., are we counting events, are we measuring sentiment in a set of texts, or are we asking people questions in surveys?); and the sources of the data itself (e.g., are we using search engine data, are we extracting information from maps, or are we analysing the content of social media users' Twitter feeds?).
+
+
+## Structure of seminars {.unnumbered}
+
+For each week, we will discuss several papers that use quantitative methods to answer questions relating to the MENA region. I set two or three of these each week. These articles **must be consulted in full** before each week's seminar. You can find these in the tabs for each week (if reading online) and the numbered chapters (if reading the pdf). The seminar will take the form of a discussion. I will take as much of a backseat as I deem appropriate. 
+
+## Course content {.unnumbered}
+
+Alongside these empirical case-study articles, I have set articles that discuss more general issues relating to the type of data or the empirical strategies used to analyse them. These articles are also to be consulted as they supply more general background to some of the questions tackled in the case-study material. We will not discuss these directly in the seminar but, if you want to have a better grasp of what the methods used in the case studies entail, you'd be minded to consult these.
+
+Finally, for the more avaricious readers among you, I list further case studies that exploit the same sorts of data. These can be consulted at your leisure.
+
+## Take-home assignments {.unnumbered}
+
+For each week, I will also be supplying you with a take-home coding and analysis task to complete. These will be replication tasks based on the replication materials (data uploaded online for other researchers to check published results) supplied for one of the week's case-study articles. Four principal data sources are used for these, one for each corresponding week: 1) the SISI-SCIAT survey data used in the paper by @Truex2019; 2) protest event data from the 2011 Syrian Revolution used by @Mazur2019; 3) spatial data on the "Scramble for Africa" by @Michalopoulos2016; and 4) Search engine data from Saudi Arabia used by @Pan2020.
+
+In the tabs to the left (if reading online) and in the second half of this document (if reading in pdf) you will be able to find these exercises. Before embarking on these, you should get acquainted with R and RStudio. You will be doing this in your labs with OSGA but I also supply some of the basic requirements to get you up and running in R in the section "Introduction to R."
+
+You will do the exercises in your own time but I encourage you to begin on them as early as possible. You can send me your code attempts and I will look at them. You can also come to me with any questions you may have or bugs in need of fixing and I will do my best to help.
+
+## A final word {.unnumbered}
+
+One final disclaimer: the articles I'm asking you to read are accessible but difficult. They will challenge you and you won't understand everything in them or every last thing about the methods used in them. This is the case even for the more experienced practitioner (myself included). What I ask is that you engage with them, try to unpick the underlying assumptions of each article, try to discern what the methods entail, try to question and unpack the data sources used etc. You'll find a more thorough guide on how to read a quant. article [here](https://www.asanet.org/sites/default/files/savvy/introtosociology/Documents/MethodsDocuments/KrippnerReadingQuantArticle.html). In reading these articles together, assembling and disassembling their parts, we will be able to discuss several important questions that the quantitative researcher has to face. I include some of these in the seminar questions for each week. Doubtless, you will also come armed with your own.
+
+I was a languages and literature (Arabic and French) student as an undergraduate. I never believed myself to be a "maths person" or a "stats person." What I therefore encourage you all to do is to approach new and less familiar topics as opportunities to develop and explore new ways of knowing, versus seeing e.g. quant. methods as something for which we "have" or "don't have" an innate ability. By doing so, we have a much better chance of getting on in a subject. The relevant buzzword for this is ``growth mindset"... and there is even a paper published in perhaps the most prestigious journal in the world---*Nature*--- showing it to work: see [here](https://www.nature.com/articles/s41586-019-1466-y). You can read more about this in your spare time. I'll leave it up to you to tell me whether I have grown into my role or not... 

@@ -1,0 +1,28 @@
+
+# Week 2: Event data {.unnumbered}
+
+Event data can take on a wide variety of different forms. This week, we will be reading several articles that each use one or other of these types of data. Events, as you will see, are very broadly defined. In the paper by @Bove2017, events take the form of international conflict events; in the article by @Mazur2019 they are protest events in the early stages of the Syrian Revolution. What is common across these literatures is a concern to explain systematically the occurrence of discrete events in time. Each of the papers has been selected to give you a flavour of what forms event data might take, as well as the potential benefits and pitfalls of their collection and use. 
+
+The article by @Mazur2019 details the sources and techniques used for collecting event data, as well as the possible biases introduced by the use of these sources. The paper by @Earl2004 tackles questions related to the use of newspapers for studying collective action phenomena, while that by @Baum2015 engages a similar topic but asks questions specifically of the use of newspapers in non-democratic contexts. 
+
+The paper by @Bove2017 takes up a question that has received outsized attention in Middle East studies: the clash of civilizations theory first proposed by Samuel P. Huntington in a *Foreign Affairs* article [here](https://www.foreignaffairs.com/articles/united-states/1993-06-01/clash-civilizations). This will give us the opportunity to engage questions of measurement validity in relation not only to the culture but also to conflict generally---questions taken up in the general readings by @Kalyvas2003, @Wedeen2002, and @Adcock2001. For those interested, you'll also find references to a back-and-forth between Huntington and the authors of a previous test of his conjecture listed in the further case studies [@Huntington2000; @Oneal2000; @Russett2000].
+
+**Questions to consider in the seminar**: What issues need to be considered when categorizing events into discrete categories? What constitutes a valid sample from which to make population-based inferences? Are newspapers valid sources of data? Is information bias particularly acute in non-democracies? Can we accurately measure contentious and disruptive political phenomena (war, conflict, protest)? Can we measure culture?
+
+**Required reading**:
+
+- @Chiozza2002
+- @Mazur2019
+
+**General reading**:
+
+- @Baum2015
+- @Earl2004
+- @Kalyvas2003
+- @Wedeen2002
+
+**Additional case studies reading**:
+
+- @Huntington2000
+- @Russett2000
+- @Oneal2000

@@ -1,0 +1,33 @@
+
+# Week 3: Spatial data {.unnumbered}
+
+This week we will be looking at a type of data that is becoming increasingly used---spatial data. Of course, all data is spatial in some sense: everything happens somewhere. But spatial data refers more specifically to how we might leverage geographical information to answer questions of interest about the social world. And some questions are more spatial than others....
+
+Spatial data, we will see, is particularly relevant when we're thinking about questions of historical interest. When I first started learning quantitative methods, I was working under the assumption that large-N analysis was restricted to the study of topics of contemporary interest. After all, surveys weren't widely used until the second half of the Twentieth Century, and how could we possibly obtain systematic data on historical phenomena when modern social scientific methods hadn't yet been invented? Not only is historical data used in the quantitative literature, its use is becoming increasingly popular. 
+
+Here, we will firstly look at a recent article by @Brooke2018 that uses so-called ``historical GIS" techniques (computational methods to geocode phenomena of interest and extract data from maps). This will give us the chance to discuss the potentials and pitfalls of historical-GIS techniques, questions relating to appropriate units of analysis [@Branch2016], as well as classic problems in spatial analysis relating to the ecological fallacy [@Robinson1950].
+
+The article by @Michalopoulos2016 looks at a particular historical event of interest---the "Scramble for Africa"---but does so to make claims about the effects of colonialism on present-day economic development. This literature is more broadly known as "persistence" scholarship, in reference to the persistent long-run effects of events in time. Such claims, and forms of analysis, naturally give rise to questions concerning causality and historical process; questions that are taken up in the article by @Kocher2016. An additional article in the further reading by @Michalopoulos2018 also uses spatial data to investigate the link between pre-Islamic trade routes and present-day levels of adherence to Islam. 
+
+A final article by @Blaydes2019 takes up a question of central interest in the literature on comparative Middle Eastern development: divergence in relation to European economies. The additional reading by @Blaydes2020 looks specifically at the effect of political conflict on long-run development. These articles give us the chance to scrutinize the spatial techniques used, and to think about some of the many competing explanations for comparative Middle Eastern development, some of which even stretch back to the Neolithic Period [@Olsson2016]!
+
+**Questions to consider in the seminar**: Can we infer individual-level characteristics/behaviour from aggregate statistics? Why might ecological inferences differ from individual-level inferences? What can we measure from maps and what can we not measure? By what criteria should we assess the validity of so-called "persistence" arguments? What version of causality is promoted by this literature? 
+
+**Required reading**:
+
+- @Brooke2018
+- @Michalopoulos2016
+- @Blaydes2019
+
+**General reading**:
+
+- @Branch2016
+- @Kocher2016
+- @Robinson1950
+- @Blaydes2017
+
+**Additional case studies reading**:
+
+- @Olsson2016
+- @Blaydes2020
+- @Michalopoulos2018

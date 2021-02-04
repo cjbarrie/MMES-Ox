@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 4 Exercise | MMES Quantitative Research Methods Oxford 2021</title>
+  <meta name="description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 4 Exercise | MMES Quantitative Research Methods Oxford 2021" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/Bahre_Fars.jpeg" />
+  <meta property="og:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="cjbarrie/bookdown_template" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 4 Exercise | MMES Quantitative Research Methods Oxford 2021" />
+  
+  <meta name="twitter:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:image" content="images/Bahre_Fars.jpeg" />
+
+<meta name="author" content="Christopher Barrie" />
+
+
+<meta name="date" content="2021-02-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="week-3-exercise.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
+<script src="libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.css" rel="stylesheet" />
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css" rel="stylesheet" />
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MMES Oxford 2021</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>A note on this document</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#structure-of-seminars"><i class="fa fa-check"></i>Structure of seminars</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#take-home-assignments"><i class="fa fa-check"></i>Take-home assignments</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#a-final-word"><i class="fa fa-check"></i>A final word</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-surveys-and-experiments.html"><a href="week-1-surveys-and-experiments.html"><i class="fa fa-check"></i>Week 1: Surveys and experiments</a></li>
+<li class="chapter" data-level="" data-path="week-2-event-data.html"><a href="week-2-event-data.html"><i class="fa fa-check"></i>Week 2: Event data</a></li>
+<li class="chapter" data-level="" data-path="week-3-spatial-data.html"><a href="week-3-spatial-data.html"><i class="fa fa-check"></i>Week 3: Spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-4-online-and-text-data.html"><a href="week-4-online-and-text-data.html"><i class="fa fa-check"></i>Week 4: Online and text data</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html"><i class="fa fa-check"></i>Introduction to R</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-with-r-at-home"><i class="fa fa-check"></i>Getting started with R at home</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#some-basic-information"><i class="fa fa-check"></i>Some basic information</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-in-rstudio"><i class="fa fa-check"></i>Getting Started in RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#a-simple-example"><i class="fa fa-check"></i>A simple example</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#loading-packages"><i class="fa fa-check"></i>Loading packages</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#saving-your-objects-plots-and-scripts"><i class="fa fa-check"></i>Saving your objects, plots and scripts</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#knowing-where-r-saves-your-documents"><i class="fa fa-check"></i>Knowing where R saves your documents</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#practicing-in-r"><i class="fa fa-check"></i>Practicing in R</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#one-final-note"><i class="fa fa-check"></i>One final note</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html"><i class="fa fa-check"></i>Week 1 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#investigating-support-for-sisi-in-egypt"><i class="fa fa-check"></i>Investigating support for Sisi in Egypt</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#preparing-the-dataset"><i class="fa fa-check"></i>Preparing the dataset</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#visualizing-the-data"><i class="fa fa-check"></i>Visualizing the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#subsetting-the-data"><i class="fa fa-check"></i>Subsetting the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#coding-tasks"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html"><i class="fa fa-check"></i>Week 2 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#analysing-protest-in-the-syrian-revolution"><i class="fa fa-check"></i>Analysing protest in the Syrian Revolution</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#read-in-the-data"><i class="fa fa-check"></i>Read in the data</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#time-series-plots"><i class="fa fa-check"></i>Time-series plots</a></li>
+<li><a href="week-2-exercise.html#using-the-tidyverse">Using the <tt>tidyverse</tt></a></li>
+<li><a href="week-2-exercise.html#using-ggplot">Using <tt>ggplot</tt></a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#working-with-dates"><i class="fa fa-check"></i>Working with dates</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#visualizing-data-on-maps"><i class="fa fa-check"></i>Visualizing data on maps:</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#coding-tasks-1"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html"><i class="fa fa-check"></i>Week 3 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#contingency-tables"><i class="fa fa-check"></i>Contingency tables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#recoding-variables"><i class="fa fa-check"></i>Recoding variables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#visualizing-spatial-data"><i class="fa fa-check"></i>Visualizing spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#back-to-the-mena"><i class="fa fa-check"></i>Back to the MENA</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#coding-tasks-2"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html"><i class="fa fa-check"></i>Week 4 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#preparing-and-plotting-the-data"><i class="fa fa-check"></i>Preparing and plotting the data</a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#conducting-t-tests"><i class="fa fa-check"></i>Conducting t-tests</a></li>
+<li><a href="week-4-exercise.html#using-gtrendsr">Using <tt>gtrendsR</tt></a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#coding-tasks-3"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MMES Quantitative Research Methods Oxford 2021</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week-4-exercise" class="section level1 unnumbered">
+<h1>Week 4 Exercise</h1>
+<p>This week we looked at online and text data, and the various questions it throws up relating to quantitative research design. For the week’s coding task, we’ll be using data from the <a href="https://www.cambridge.org/core/journals/american-political-science-review/article/how-saudi-crackdowns-fail-to-silence-online-dissent/1BA13DF8FD5D04EC181BCD4D1055254B">article</a> by Pan and Siegel (2020). The actual raw tweet data used by these authors is not available in the replication materials. For good reason—there are ethical restrictions around sharing these data and Twitter’s own ToS forbids the distribution of tweet datasets.</p>
+<p>Given that we don’t have access to these data, we are first going to go through some of the analyses conducted by the authors with the pre-processed data they do provide. We are then going to collect our own data from Google Trends, just as the authors do. We can achieve this in a few simple steps, described below.</p>
+<div id="preparing-and-plotting-the-data" class="section level2 unnumbered">
+<h2>Preparing and plotting the data</h2>
+<p>First we’re getting to read in the data on tweet volume and arrest dates of the imprisoned opinion leaders. Think about how these data have been prepared. The authors have collected data from the identified opinion leaders and have then summed the number of tweets produced by these accounts over daily intervals. This gives you an idea of one way we can make inferences from quantitative text data.</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="week-4-exercise.html#cb89-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb89-2"><a href="week-4-exercise.html#cb89-2"></a><span class="kw">library</span>(gtrendsR)</span>
+<span id="cb89-3"><a href="week-4-exercise.html#cb89-3"></a><span class="kw">library</span>(ggthemes)</span>
+<span id="cb89-4"><a href="week-4-exercise.html#cb89-4"></a></span>
+<span id="cb89-5"><a href="week-4-exercise.html#cb89-5"></a>arrested &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/cjbarrie/teaching_material/master/arrested_tweet_volume.csv&quot;</span>)</span></code></pre></div>
+<p>Using these data we can reproduce Figure 1A from the paper using the <tt>ggplot</tt> package we ’ve encountered in weeks previous. In order to look at just the thirty days pre- and post-arrest, as in the figure, we first need to subset the data.</p>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="week-4-exercise.html#cb90-1"></a>arrested_month&lt;-<span class="st"> </span>arrested <span class="op">%&gt;%</span></span>
+<span id="cb90-2"><a href="week-4-exercise.html#cb90-2"></a><span class="st">  </span><span class="kw">filter</span>(days_post_release<span class="op">&gt;=-</span><span class="dv">30</span> <span class="op">&amp;</span><span class="st"> </span></span>
+<span id="cb90-3"><a href="week-4-exercise.html#cb90-3"></a><span class="st">           </span>days_post_release<span class="op">&lt;=</span><span class="dv">30</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="week-4-exercise.html#cb91-1"></a><span class="kw">ggplot</span>(arrested_month, <span class="kw">aes</span>(days_post_release, tweets, <span class="dt">group=</span>post_release)) <span class="op">+</span><span class="st">  </span></span>
+<span id="cb91-2"><a href="week-4-exercise.html#cb91-2"></a><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">colour=</span><span class="st">&quot;gray40&quot;</span>, <span class="dt">size=</span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb91-3"><a href="week-4-exercise.html#cb91-3"></a><span class="st"> </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;loess&quot;</span>, <span class="dt">se=</span>F, <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>, <span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">span=</span>.<span class="dv">5</span>, <span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span><span class="st">  </span></span>
+<span id="cb91-4"><a href="week-4-exercise.html#cb91-4"></a><span class="st"> </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span><span class="dv">0</span>, <span class="dt">linetype=</span><span class="dv">2</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb91-5"><a href="week-4-exercise.html#cb91-5"></a><span class="st"> </span><span class="kw">labs</span>(<span class="dt">y=</span><span class="st">&quot;Daily Volume of Tweets&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Days Pre-Arrest and Post-Release&quot;</span>)<span class="op">+</span></span>
+<span id="cb91-6"><a href="week-4-exercise.html#cb91-6"></a><span class="st"> </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), </span>
+<span id="cb91-7"><a href="week-4-exercise.html#cb91-7"></a> <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(), </span>
+<span id="cb91-8"><a href="week-4-exercise.html#cb91-8"></a> <span class="dt">panel.background =</span> <span class="kw">element_blank</span>())</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-68-1.png" width="672" /></p>
+<p>The authors also used Google Trends data to look at the effect of arrests on public attention. We can also look at these data and reproduce their results.</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="week-4-exercise.html#cb92-1"></a>gtrends &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/cjbarrie/teaching_material/master/gtrends_volume_month.csv&quot;</span>)</span></code></pre></div>
+<p>To arrive at these data, the authors sum the search volumes for each of the opinion leaders on the days of interest (pre- and post-arrest). We can then plot the difference in search intensity before and after arrest using code similar to that above.</p>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="week-4-exercise.html#cb93-1"></a><span class="kw">ggplot</span>(gtrends, <span class="kw">aes</span>(days_since_arrest, hits, <span class="dt">group=</span>post_arrest)) <span class="op">+</span><span class="st">  </span></span>
+<span id="cb93-2"><a href="week-4-exercise.html#cb93-2"></a><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">colour=</span><span class="st">&quot;gray40&quot;</span>, <span class="dt">size=</span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb93-3"><a href="week-4-exercise.html#cb93-3"></a><span class="st"> </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;loess&quot;</span>, <span class="dt">se=</span>F, <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>, <span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">span=</span>.<span class="dv">5</span>, <span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span><span class="st">  </span></span>
+<span id="cb93-4"><a href="week-4-exercise.html#cb93-4"></a><span class="st"> </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span><span class="dv">0</span>, <span class="dt">linetype=</span><span class="dv">2</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb93-5"><a href="week-4-exercise.html#cb93-5"></a><span class="st"> </span><span class="kw">labs</span>(<span class="dt">y=</span><span class="st">&quot;Daily Search Volume&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Days Pre-Arrest and Post-Release&quot;</span>)<span class="op">+</span></span>
+<span id="cb93-6"><a href="week-4-exercise.html#cb93-6"></a><span class="st"> </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), </span>
+<span id="cb93-7"><a href="week-4-exercise.html#cb93-7"></a> <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(), </span>
+<span id="cb93-8"><a href="week-4-exercise.html#cb93-8"></a> <span class="dt">panel.background =</span> <span class="kw">element_blank</span>())</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-70-1.png" width="672" /></p>
+</div>
+<div id="conducting-t-tests" class="section level2 unnumbered">
+<h2>Conducting t-tests</h2>
+<p>From eyeballing these figures, there seem to be differences in search volume before and after arrests are made. This does not, however, constitute statistical support for this inference. To check for significant before and after differences, we can use a t-test.</p>
+<p>The authors provide disaggregated data on Google Trends Search volume for different individuals of interest.We can carry out t-tests on the before and after search volume for each of these to check for significant differences.</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="week-4-exercise.html#cb94-1"></a>gtrends_actors &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/cjbarrie/teaching_material/master/gtrends_volume_disaggregated.csv&quot;</span>)</span>
+<span id="cb94-2"><a href="week-4-exercise.html#cb94-2"></a></span>
+<span id="cb94-3"><a href="week-4-exercise.html#cb94-3"></a><span class="co">#first we need to subset the data into the relevant categories of interest</span></span>
+<span id="cb94-4"><a href="week-4-exercise.html#cb94-4"></a>clerics &lt;-<span class="st"> </span><span class="kw">subset</span>(gtrends_actors, actor_type<span class="op">==</span><span class="st">&quot;sahwa_clerics&quot;</span><span class="op">|</span></span>
+<span id="cb94-5"><a href="week-4-exercise.html#cb94-5"></a><span class="st">                    </span>actor_type<span class="op">==</span><span class="st">&quot;sunni_clerics&quot;</span>)</span>
+<span id="cb94-6"><a href="week-4-exercise.html#cb94-6"></a></span>
+<span id="cb94-7"><a href="week-4-exercise.html#cb94-7"></a>shia &lt;-<span class="st"> </span><span class="kw">subset</span>(gtrends_actors, actor_type<span class="op">==</span><span class="st">&quot;shia&quot;</span>)</span>
+<span id="cb94-8"><a href="week-4-exercise.html#cb94-8"></a></span>
+<span id="cb94-9"><a href="week-4-exercise.html#cb94-9"></a>secular &lt;-<span class="st"> </span><span class="kw">subset</span>(gtrends_actors, actor_type<span class="op">==</span><span class="st">&quot;liberals&quot;</span><span class="op">|</span></span>
+<span id="cb94-10"><a href="week-4-exercise.html#cb94-10"></a><span class="st">                    </span>actor_type<span class="op">==</span><span class="st">&quot;lawyers&quot;</span><span class="op">|</span></span>
+<span id="cb94-11"><a href="week-4-exercise.html#cb94-11"></a><span class="st">                    </span>actor_type<span class="op">==</span><span class="st">&quot;womens_rights&quot;</span><span class="op">|</span></span>
+<span id="cb94-12"><a href="week-4-exercise.html#cb94-12"></a><span class="st">                    </span>actor_type<span class="op">==</span><span class="st">&quot;university_corruption&quot;</span>)</span>
+<span id="cb94-13"><a href="week-4-exercise.html#cb94-13"></a></span>
+<span id="cb94-14"><a href="week-4-exercise.html#cb94-14"></a><span class="co">#then we carry out the t-tests</span></span>
+<span id="cb94-15"><a href="week-4-exercise.html#cb94-15"></a></span>
+<span id="cb94-16"><a href="week-4-exercise.html#cb94-16"></a>t_test_clerics_month &lt;-<span class="st"> </span><span class="kw">t.test</span>(hits<span class="op">~</span>post_arrest, <span class="dt">data=</span>clerics)</span>
+<span id="cb94-17"><a href="week-4-exercise.html#cb94-17"></a>t_test_clerics_month</span></code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  hits by post_arrest
+## t = 0.44419, df = 68.265, p-value = 0.6583
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -10.78340  16.95935
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        23.63636        20.54839</code></pre>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="week-4-exercise.html#cb96-1"></a>t_test_shia_month &lt;-<span class="st"> </span><span class="kw">t.test</span>(hits<span class="op">~</span>post_arrest, <span class="dt">data=</span>shia)</span>
+<span id="cb96-2"><a href="week-4-exercise.html#cb96-2"></a>t_test_shia_month</span></code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  hits by post_arrest
+## t = -1.3848, df = 45.758, p-value = 0.1728
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -16.007337   2.960025
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        7.766667       14.290323</code></pre>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="week-4-exercise.html#cb98-1"></a>t_test_secular_month &lt;-<span class="st"> </span><span class="kw">t.test</span>(hits<span class="op">~</span>post_arrest, <span class="dt">data=</span>secular)</span>
+<span id="cb98-2"><a href="week-4-exercise.html#cb98-2"></a>t_test_secular_month</span></code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  hits by post_arrest
+## t = -2.5337, df = 161.14, p-value = 0.01224
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -29.936857  -3.711172
+## sample estimates:
+## mean in group 0 mean in group 1 
+##        21.12222        37.94624</code></pre>
+<p>What do we see here?</p>
+</div>
+<div id="using-gtrendsr" class="section level2 unnumbered">
+<h2>Using <tt>gtrendsR</tt></h2>
+<p>Below, we use the R package <tt>gtrendsR</tt>. This will allow you to “query” the Google Trends API directly from your R console. In essence, this just means that you don’t need to go through the click-button process of visiting the Google Trends website, setting your parameters of interest, and downloading the data to an Excel spreadsheet. Instead, you can do everything within R itself.</p>
+<p>In the code below, all we are doing in the first line is telling the API to download daily search volume for the Arabic word “سليماني” from December 01, 2019 to January 09, 2020. Qassem Soleimani was assassinated by a US air bombardment in Iraq on January 03, 2020. This event sparked outcry and mass funeral processions in both Iraq and Iran. We would therefore expect search interest for the General to increase around this time.</p>
+<p>You can change the date parameters to update the date to the latest date available when you come to use this hand-out. The next line specifies the language of interest—here, Arabic. Finally, we tell the API which country we’re interested in—here, Iraq. We use the two letter country code for this. You can find a list of these <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">here</a>. You can find complete information on the <tt>gtrendsR</tt> package <a href="https://cran.r-project.org/web/packages/gtrendsR/gtrendsR.pdf">here</a>. What do we see here?</p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="week-4-exercise.html#cb100-1"></a>sol &lt;-<span class="st"> </span><span class="kw">gtrends</span>(<span class="kw">c</span>(<span class="st">&quot;سليماني&quot;</span>), </span>
+<span id="cb100-2"><a href="week-4-exercise.html#cb100-2"></a>               <span class="dt">time =</span> <span class="st">&quot;2019-12-01 2020-02-05&quot;</span>,</span>
+<span id="cb100-3"><a href="week-4-exercise.html#cb100-3"></a>               <span class="dt">hl =</span> <span class="st">&quot;ar&quot;</span>,</span>
+<span id="cb100-4"><a href="week-4-exercise.html#cb100-4"></a>               <span class="dt">geo =</span> <span class="kw">c</span>(<span class="st">&quot;IQ&quot;</span>))</span>
+<span id="cb100-5"><a href="week-4-exercise.html#cb100-5"></a></span>
+<span id="cb100-6"><a href="week-4-exercise.html#cb100-6"></a><span class="co">#data comes in &quot;list&quot; format so convert to dataframe for easier use</span></span>
+<span id="cb100-7"><a href="week-4-exercise.html#cb100-7"></a>soldf &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(sol<span class="op">$</span>interest_over_time)</span>
+<span id="cb100-8"><a href="week-4-exercise.html#cb100-8"></a><span class="co">#get date in R-readable format</span></span>
+<span id="cb100-9"><a href="week-4-exercise.html#cb100-9"></a>soldf<span class="op">$</span>date &lt;-<span class="st"> </span><span class="kw">as.Date</span>(soldf<span class="op">$</span>date)</span>
+<span id="cb100-10"><a href="week-4-exercise.html#cb100-10"></a><span class="co">#hits is stored as &quot;character&quot; string variable but should be numeric</span></span>
+<span id="cb100-11"><a href="week-4-exercise.html#cb100-11"></a>soldf<span class="op">$</span>hits &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(soldf<span class="op">$</span>hits)</span></code></pre></div>
+<pre><code>## Warning: NAs introduced by coercion</code></pre>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="week-4-exercise.html#cb102-1"></a><span class="kw">ggplot</span>(soldf, <span class="kw">aes</span>(date, hits)) <span class="op">+</span></span>
+<span id="cb102-2"><a href="week-4-exercise.html#cb102-2"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">size =</span> <span class="fl">0.5</span>) <span class="op">+</span></span>
+<span id="cb102-3"><a href="week-4-exercise.html#cb102-3"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Date&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Daily Search Volume&quot;</span>) <span class="op">+</span></span>
+<span id="cb102-4"><a href="week-4-exercise.html#cb102-4"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb102-5"><a href="week-4-exercise.html#cb102-5"></a>        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb102-6"><a href="week-4-exercise.html#cb102-6"></a>        <span class="dt">panel.background =</span> <span class="kw">element_blank</span>())</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-72-1.png" width="672" /></p>
+<p>In the figures used by Pan and Siegel, they split into days before and after arrests occur. For the Soleimani data, we might like to split into days before and after the killing of Soleimani by the US. When working with dates, it is helpful to have a numeric identifier for each day, if we want to manipulate these data or perform calculations on them. Therefore we first assign a numeric identifier to the dates.</p>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="week-4-exercise.html#cb103-1"></a>soldf<span class="op">$</span>datenum &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(soldf<span class="op">$</span>date)</span>
+<span id="cb103-2"><a href="week-4-exercise.html#cb103-2"></a></span>
+<span id="cb103-3"><a href="week-4-exercise.html#cb103-3"></a><span class="kw">print</span>(soldf<span class="op">$</span>datenum[soldf<span class="op">$</span>date<span class="op">==</span><span class="st">&quot;2020-01-03&quot;</span>])</span></code></pre></div>
+<pre><code>## [1] 18264</code></pre>
+<p>We can see that the numeric identifier for 03 January, 2020 is 18264. We therefore subtract this number from each of the numeric dates to obtain a column of numbers indicating how many days before or after the assassination of Soleimani.</p>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="week-4-exercise.html#cb105-1"></a>soldf<span class="op">$</span>datesol &lt;-<span class="st"> </span>soldf<span class="op">$</span>datenum <span class="dv">-18264</span></span></code></pre></div>
+<p>As in the Pan and Siegel data, we then need a column telling us whether or not the day in question was before or after the assassination. This is simply a column of 1s and 0s depending on whether or not the <em>datesol</em> variable is positive or negative.</p>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="week-4-exercise.html#cb106-1"></a>soldf<span class="op">$</span>postass[soldf<span class="op">$</span>datesol<span class="op">&gt;=</span><span class="dv">0</span>] &lt;-<span class="dv">1</span></span>
+<span id="cb106-2"><a href="week-4-exercise.html#cb106-2"></a>soldf<span class="op">$</span>postass[soldf<span class="op">$</span>datesol<span class="op">&lt;</span><span class="dv">0</span>] &lt;-<span class="dv">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="week-4-exercise.html#cb107-1"></a><span class="kw">ggplot</span>(soldf, <span class="kw">aes</span>(datesol, hits, <span class="dt">group=</span>postass)) <span class="op">+</span><span class="st">  </span></span>
+<span id="cb107-2"><a href="week-4-exercise.html#cb107-2"></a><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">colour=</span><span class="st">&quot;gray40&quot;</span>, <span class="dt">size=</span><span class="dv">3</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb107-3"><a href="week-4-exercise.html#cb107-3"></a><span class="st"> </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;loess&quot;</span>, <span class="dt">se=</span>F, <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>, <span class="dt">fill=</span><span class="st">&quot;black&quot;</span>, <span class="dt">span=</span>.<span class="dv">5</span>, <span class="dt">size=</span><span class="dv">2</span>)<span class="op">+</span><span class="st">  </span></span>
+<span id="cb107-4"><a href="week-4-exercise.html#cb107-4"></a><span class="st"> </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span><span class="dv">0</span>, <span class="dt">linetype=</span><span class="dv">2</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb107-5"><a href="week-4-exercise.html#cb107-5"></a><span class="st"> </span><span class="kw">labs</span>(<span class="dt">y=</span><span class="st">&quot;Daily Search Volume&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Days Pre-Assassination and Post-Assassination&quot;</span>)<span class="op">+</span></span>
+<span id="cb107-6"><a href="week-4-exercise.html#cb107-6"></a><span class="st"> </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), </span>
+<span id="cb107-7"><a href="week-4-exercise.html#cb107-7"></a> <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(), </span>
+<span id="cb107-8"><a href="week-4-exercise.html#cb107-8"></a> <span class="dt">panel.background =</span> <span class="kw">element_blank</span>())</span></code></pre></div>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-76-1.png" width="672" /></p>
+</div>
+<div id="coding-tasks-3" class="section level2 unnumbered">
+<h2>Coding tasks</h2>
+<ul>
+<li>Choose alternative search parameters for the Google Trends API and retrieve data for them.</li>
+<li>Plot these data over time.</li>
+<li>Choose a relevant date over which to split these data, and replot.</li>
+<li>Conduct a t-test on the before and after search volumes.</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week-3-exercise.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/10-week4ex.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MMES-2021.pdf"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

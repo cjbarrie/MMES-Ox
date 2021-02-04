@@ -1,0 +1,34 @@
+# Week 1: Surveys and experiments {.unnumbered}
+
+Survey data is one of the most regularly used type of data---certainly when we're interested in measuring individual-level attitudes and preferences. But surveys are also how we measure unemployment, population, and migration etc. That is, we can use them to measure aggregate population-level characteristics too. And what we'll see in the readings for this week is that surveys can also be combined with experimental strategies for estimating the causal effect of given ``treatments" of interest. We will compare these to other experimental strategies for measuring real-world behaviours.
+
+We will have the opportunity to discuss surveying techniques, more recent innovations in so-called "survey experiments" [@Nugent2020; @Bush2016; @Nugent2018], the potentials and pitfalls of survey techniques designed to overcome social desirability bias [@Truex2019; @Brooke2017a; @Nillesen2021], and experimental setups designed to measure real-world behavior [@Mousa2020]. 
+
+For each of these empirical papers, I have selected some more general readings, and further case studies, pertinent to the issues raised in each. The papers by @Krumpal2013a and @Ksiazkiewicz2013 provide general overviews of issues of social desirability bias and so-called "implicit attitudes" techniques in social cognition research. The article by @Schuman1976 provides an early overview of the so-called attitude-behaviour gap in survey research, while the @Barabas2010 article investigates the external (i.e., real-world relevance) of lab-based experiments. The book by @Kuran1995b is a classic of social science research and should be consulted in part, if not in full by anyone with an interest in studying attitudes generally. The *World Politics* article by @Kuran1991a provides an accessible application of the theory of preference falsification to contexts of political revolution.
+
+The aim of the practical exercise is to help you understand, analyse, and reproduce aggregate descriptive statistics. Here, we will be using data from a recent article in the *Journal of Politics* by @Truex2019 that investigates levels of support for the authoritarian government of Abdel Fattah El-Sisi in Egypt. The exercise will show you how to replicate their results in <tt>R</tt> and you will also be set some coding tasks to complete yourselves.
+
+**Questions to consider in the seminar**: Can we rely on individuals to give honest answers? Can we accurately measure complex concepts in surveys? What criteria might we use to ensure the validity of survey instruments? Can we measure opinions without directly asking for them? How might we overcome response biases in survey research? Does experimental evidence tell us something meaningful about real-world social phenomena?
+
+**Required reading**:
+
+- @Mousa2020
+- @Nugent2020
+- @Truex2019
+
+**General reading**:
+
+- @Barabas2010
+- @Ksiazkiewicz2013
+- @Kuran1995b
+- @Kuran1991a
+- @Krumpal2013a
+- @Schuman1976
+
+**Additional case studies reading**:
+
+- @Brooke2017a
+- @Nugent2018
+- @Bush2016
+- @Nillesen2021
+

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 1: Surveys and experiments | MMES Quantitative Research Methods Oxford 2021</title>
+  <meta name="description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 1: Surveys and experiments | MMES Quantitative Research Methods Oxford 2021" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/Bahre_Fars.jpeg" />
+  <meta property="og:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="cjbarrie/bookdown_template" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 1: Surveys and experiments | MMES Quantitative Research Methods Oxford 2021" />
+  
+  <meta name="twitter:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:image" content="images/Bahre_Fars.jpeg" />
+
+<meta name="author" content="Christopher Barrie" />
+
+
+<meta name="date" content="2021-02-04" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="week-2-event-data.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
+<script src="libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.css" rel="stylesheet" />
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css" rel="stylesheet" />
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MMES Oxford 2021</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>A note on this document</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#structure-of-seminars"><i class="fa fa-check"></i>Structure of seminars</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#take-home-assignments"><i class="fa fa-check"></i>Take-home assignments</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#a-final-word"><i class="fa fa-check"></i>A final word</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-surveys-and-experiments.html"><a href="week-1-surveys-and-experiments.html"><i class="fa fa-check"></i>Week 1: Surveys and experiments</a></li>
+<li class="chapter" data-level="" data-path="week-2-event-data.html"><a href="week-2-event-data.html"><i class="fa fa-check"></i>Week 2: Event data</a></li>
+<li class="chapter" data-level="" data-path="week-3-spatial-data.html"><a href="week-3-spatial-data.html"><i class="fa fa-check"></i>Week 3: Spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-4-online-and-text-data.html"><a href="week-4-online-and-text-data.html"><i class="fa fa-check"></i>Week 4: Online and text data</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html"><i class="fa fa-check"></i>Introduction to R</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-with-r-at-home"><i class="fa fa-check"></i>Getting started with R at home</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#some-basic-information"><i class="fa fa-check"></i>Some basic information</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-in-rstudio"><i class="fa fa-check"></i>Getting Started in RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#a-simple-example"><i class="fa fa-check"></i>A simple example</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#loading-packages"><i class="fa fa-check"></i>Loading packages</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#saving-your-objects-plots-and-scripts"><i class="fa fa-check"></i>Saving your objects, plots and scripts</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#knowing-where-r-saves-your-documents"><i class="fa fa-check"></i>Knowing where R saves your documents</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#practicing-in-r"><i class="fa fa-check"></i>Practicing in R</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#one-final-note"><i class="fa fa-check"></i>One final note</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html"><i class="fa fa-check"></i>Week 1 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#investigating-support-for-sisi-in-egypt"><i class="fa fa-check"></i>Investigating support for Sisi in Egypt</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#preparing-the-dataset"><i class="fa fa-check"></i>Preparing the dataset</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#visualizing-the-data"><i class="fa fa-check"></i>Visualizing the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#subsetting-the-data"><i class="fa fa-check"></i>Subsetting the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#coding-tasks"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html"><i class="fa fa-check"></i>Week 2 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#analysing-protest-in-the-syrian-revolution"><i class="fa fa-check"></i>Analysing protest in the Syrian Revolution</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#read-in-the-data"><i class="fa fa-check"></i>Read in the data</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#time-series-plots"><i class="fa fa-check"></i>Time-series plots</a></li>
+<li><a href="week-2-exercise.html#using-the-tidyverse">Using the <tt>tidyverse</tt></a></li>
+<li><a href="week-2-exercise.html#using-ggplot">Using <tt>ggplot</tt></a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#working-with-dates"><i class="fa fa-check"></i>Working with dates</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#visualizing-data-on-maps"><i class="fa fa-check"></i>Visualizing data on maps:</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#coding-tasks-1"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html"><i class="fa fa-check"></i>Week 3 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#contingency-tables"><i class="fa fa-check"></i>Contingency tables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#recoding-variables"><i class="fa fa-check"></i>Recoding variables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#visualizing-spatial-data"><i class="fa fa-check"></i>Visualizing spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#back-to-the-mena"><i class="fa fa-check"></i>Back to the MENA</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#coding-tasks-2"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html"><i class="fa fa-check"></i>Week 4 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#preparing-and-plotting-the-data"><i class="fa fa-check"></i>Preparing and plotting the data</a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#conducting-t-tests"><i class="fa fa-check"></i>Conducting t-tests</a></li>
+<li><a href="week-4-exercise.html#using-gtrendsr">Using <tt>gtrendsR</tt></a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#coding-tasks-3"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MMES Quantitative Research Methods Oxford 2021</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week-1-surveys-and-experiments" class="section level1 unnumbered">
+<h1>Week 1: Surveys and experiments</h1>
+<p>Survey data is one of the most regularly used type of data—certainly when we’re interested in measuring individual-level attitudes and preferences. But surveys are also how we measure unemployment, population, and migration etc. That is, we can use them to measure aggregate population-level characteristics too. And what we’ll see in the readings for this week is that surveys can also be combined with experimental strategies for estimating the causal effect of given ``treatments" of interest. We will compare these to other experimental strategies for measuring real-world behaviours.</p>
+<p>We will have the opportunity to discuss surveying techniques, more recent innovations in so-called “survey experiments” <span class="citation">(Nugent <a href="#ref-Nugent2020" role="doc-biblioref">2020</a>; Bush et al. <a href="#ref-Bush2016" role="doc-biblioref">2016</a>; Nugent, Masoud, and Jamal <a href="#ref-Nugent2018" role="doc-biblioref">2018</a>)</span>, the potentials and pitfalls of survey techniques designed to overcome social desirability bias <span class="citation">(Truex and Tavana <a href="#ref-Truex2019" role="doc-biblioref">2019</a>; Brooke <a href="#ref-Brooke2017a" role="doc-biblioref">2017</a>; Nillesen et al. <a href="#ref-Nillesen2021" role="doc-biblioref">2021</a>)</span>, and experimental setups designed to measure real-world behavior <span class="citation">(Mousa <a href="#ref-Mousa2020" role="doc-biblioref">2020</a>)</span>.</p>
+<p>For each of these empirical papers, I have selected some more general readings, and further case studies, pertinent to the issues raised in each. The papers by <span class="citation">Krumpal (<a href="#ref-Krumpal2013a" role="doc-biblioref">2013</a>)</span> and <span class="citation">Ksiazkiewicz and Hedrick (<a href="#ref-Ksiazkiewicz2013" role="doc-biblioref">2013</a>)</span> provide general overviews of issues of social desirability bias and so-called “implicit attitudes” techniques in social cognition research. The article by <span class="citation">Schuman and Johnson (<a href="#ref-Schuman1976" role="doc-biblioref">1976</a>)</span> provides an early overview of the so-called attitude-behaviour gap in survey research, while the <span class="citation">Barabas and Jerit (<a href="#ref-Barabas2010" role="doc-biblioref">2010</a>)</span> article investigates the external (i.e., real-world relevance) of lab-based experiments. The book by <span class="citation">Kuran (<a href="#ref-Kuran1995b" role="doc-biblioref">1995</a>)</span> is a classic of social science research and should be consulted in part, if not in full by anyone with an interest in studying attitudes generally. The <em>World Politics</em> article by <span class="citation">Kuran (<a href="#ref-Kuran1991a" role="doc-biblioref">1991</a>)</span> provides an accessible application of the theory of preference falsification to contexts of political revolution.</p>
+<p>The aim of the practical exercise is to help you understand, analyse, and reproduce aggregate descriptive statistics. Here, we will be using data from a recent article in the <em>Journal of Politics</em> by <span class="citation">Truex and Tavana (<a href="#ref-Truex2019" role="doc-biblioref">2019</a>)</span> that investigates levels of support for the authoritarian government of Abdel Fattah El-Sisi in Egypt. The exercise will show you how to replicate their results in <tt>R</tt> and you will also be set some coding tasks to complete yourselves.</p>
+<p><strong>Questions to consider in the seminar</strong>: Can we rely on individuals to give honest answers? Can we accurately measure complex concepts in surveys? What criteria might we use to ensure the validity of survey instruments? Can we measure opinions without directly asking for them? How might we overcome response biases in survey research? Does experimental evidence tell us something meaningful about real-world social phenomena?</p>
+<p><strong>Required reading</strong>:</p>
+<ul>
+<li><span class="citation">Mousa (<a href="#ref-Mousa2020" role="doc-biblioref">2020</a>)</span></li>
+<li><span class="citation">Nugent (<a href="#ref-Nugent2020" role="doc-biblioref">2020</a>)</span></li>
+<li><span class="citation">Truex and Tavana (<a href="#ref-Truex2019" role="doc-biblioref">2019</a>)</span></li>
+</ul>
+<p><strong>General reading</strong>:</p>
+<ul>
+<li><span class="citation">Barabas and Jerit (<a href="#ref-Barabas2010" role="doc-biblioref">2010</a>)</span></li>
+<li><span class="citation">Ksiazkiewicz and Hedrick (<a href="#ref-Ksiazkiewicz2013" role="doc-biblioref">2013</a>)</span></li>
+<li><span class="citation">Kuran (<a href="#ref-Kuran1995b" role="doc-biblioref">1995</a>)</span></li>
+<li><span class="citation">Kuran (<a href="#ref-Kuran1991a" role="doc-biblioref">1991</a>)</span></li>
+<li><span class="citation">Krumpal (<a href="#ref-Krumpal2013a" role="doc-biblioref">2013</a>)</span></li>
+<li><span class="citation">Schuman and Johnson (<a href="#ref-Schuman1976" role="doc-biblioref">1976</a>)</span></li>
+</ul>
+<p><strong>Additional case studies reading</strong>:</p>
+<ul>
+<li><span class="citation">Brooke (<a href="#ref-Brooke2017a" role="doc-biblioref">2017</a>)</span></li>
+<li><span class="citation">Nugent, Masoud, and Jamal (<a href="#ref-Nugent2018" role="doc-biblioref">2018</a>)</span></li>
+<li><span class="citation">Bush et al. (<a href="#ref-Bush2016" role="doc-biblioref">2016</a>)</span></li>
+<li><span class="citation">Nillesen et al. (<a href="#ref-Nillesen2021" role="doc-biblioref">2021</a>)</span></li>
+</ul>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Barabas2010">
+<p>Barabas, Jason, and Jennifer Jerit. 2010. “Are Survey Experiments Externally Valid?” <em>American Political Science Review</em> 104 (2): 226–42. <a href="https://doi.org/10.1017/S0003055410000092">https://doi.org/10.1017/S0003055410000092</a>.</p>
+</div>
+<div id="ref-Brooke2017a">
+<p>Brooke, Steven. 2017. “Sectarianism and Social Conformity: Evidence from Egypt.” <em>Political Research Quarterly</em> 70 (4): 848–60. <a href="https://doi.org/10.1177/1065912917717641">https://doi.org/10.1177/1065912917717641</a>.</p>
+</div>
+<div id="ref-Bush2016">
+<p>Bush, Sarah Sunn, Aaron Erlich, Lauren Prather, and Yael Zeira. 2016. “The Effects of Authoritarian Iconography: An Experimental Test.” <em>Comparative Political Studies</em> 49 (13): 1704–38. <a href="https://doi.org/10.1177/0010414016633228">https://doi.org/10.1177/0010414016633228</a>.</p>
+</div>
+<div id="ref-Krumpal2013a">
+<p>Krumpal, Ivar. 2013. “Determinants of Social Desirability Bias in Sensitive Surveys: A Literature Review.” <em>Qual Quant</em> 47: 2025–47. <a href="https://doi.org/10.1007/s11135-011-9640-9">https://doi.org/10.1007/s11135-011-9640-9</a>.</p>
+</div>
+<div id="ref-Ksiazkiewicz2013">
+<p>Ksiazkiewicz, Aleksander, and James Hedrick. 2013. “Implicit Attitudes in Political Science Research.” <em>PS - Political Science and Politics</em> 46 (3): 525–31. <a href="https://doi.org/10.1017/S1049096513000632">https://doi.org/10.1017/S1049096513000632</a>.</p>
+</div>
+<div id="ref-Kuran1995b">
+<p>Kuran, Timur. 1995. <em>Private Truths, Public Lies: The Social Consequences of Preference Falsification</em>. Cambridge: Harvard University Press.</p>
+</div>
+<div id="ref-Kuran1991a">
+<p>Kuran, Timur. 1991. “Now Out of Never: The Element of Surprise in the East European Revolution of 1989.” <em>World Politics</em> 44 (1): 7–48.</p>
+</div>
+<div id="ref-Mousa2020">
+<p>Mousa, Salma. 2020. “Building Social Cohesion Between Christians and Muslims Through Soccer in Post-ISIS Iraq.” <em>Science</em> 369 (6505): 866–70. <a href="https://doi.org/10.1126/science.abb3153">https://doi.org/10.1126/science.abb3153</a>.</p>
+</div>
+<div id="ref-Nillesen2021">
+<p>Nillesen, Eleonora, Michael Grimm, Micheline Goedhuys, Ann-Kristin Reitmann, and Aline Meysonnat. 2021. “On the Malleability of Gender Attitudes: Evidence from Implicit and Explicit Measures in Tunisia.” <em>World Development</em> 138 (February): 105263. <a href="https://doi.org/10.1016/j.worlddev.2020.105263">https://doi.org/10.1016/j.worlddev.2020.105263</a>.</p>
+</div>
+<div id="ref-Nugent2018">
+<p>Nugent, Elizabeth, Tarek Masoud, and Amaney A. Jamal. 2018. “Arab Responses to Western Hegemony: Experimental Evidence from Egypt.” <em>Journal of Conflict Resolution</em> 62 (2): 254–88. <a href="https://doi.org/10.1177/0022002716648738">https://doi.org/10.1177/0022002716648738</a>.</p>
+</div>
+<div id="ref-Nugent2020">
+<p>Nugent, Elizabeth R. 2020. “The Psychology of Repression and Polarization.” <em>World Politics</em> 72 (2): 291–334. <a href="https://doi.org/10.1017/S0043887120000015">https://doi.org/10.1017/S0043887120000015</a>.</p>
+</div>
+<div id="ref-Schuman1976">
+<p>Schuman, H, and M P Johnson. 1976. “Attitudes and Behavior.” <em>Annual Review of Sociology</em> 2: 161–207. <a href="https://doi.org/10.1146/annurev.so.02.080176.001113">https://doi.org/10.1146/annurev.so.02.080176.001113</a>.</p>
+</div>
+<div id="ref-Truex2019">
+<p>Truex, Rory, and Daniel L. Tavana. 2019. “Implicit Attitudes Toward an Authoritarian Regime.” <em>The Journal of Politics</em> 81 (3): 1014–27. <a href="https://doi.org/10.1086/703209">https://doi.org/10.1086/703209</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week-2-event-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-week1.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MMES-2021.pdf"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
