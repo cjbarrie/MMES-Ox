@@ -12,3 +12,5 @@ This repo contains teaching materials for the Modern Middle Eastern Studies core
 7. Week 2 exercise: \[[Section](https://rawcdn.githack.com/cjbarrie/MMES-Ox/67a3daa11264bcce16d328046f7da0b5f2e490cb/MMES-2021/_book/week-2-exercise.html)\]
 8. Week 3 exercise: \[[Section](https://rawcdn.githack.com/cjbarrie/MMES-Ox/67a3daa11264bcce16d328046f7da0b5f2e490cb/MMES-2021/_book/week-3-exercise.html)\]
 9. Week 4 exercise: \[[Section](https://rawcdn.githack.com/cjbarrie/MMES-Ox/67a3daa11264bcce16d328046f7da0b5f2e490cb/MMES-2021/_book/week-4-exercise.html)\]
+
+![Alt Text](Bahre_Fars.jpeg)
