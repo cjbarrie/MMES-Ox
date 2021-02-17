@@ -142,6 +142,14 @@ africa <- dplyr::filter(world, region_un=='Africa')
 
 Now that we have both the boundaries of former ethnica homelands as well as contemporary state boundaries. Plotting them on top of each other can be easily achieved with:
 
+```{r, eval=F, message=F, warning=F}
+murdock_shp <- st_read("murdock_ea_2010_3.shp")
+
+ggplot() + 
+  geom_sf(data = murdock_shp, col= "red") + 
+  geom_sf(data = africa, alpha =.1)
+```
+
 ```{r, eval=T, message=F, warning=F, echo=F}
 murdock_shp <- st_read("other_files/murdock_ea_2010_3.shp")
 
