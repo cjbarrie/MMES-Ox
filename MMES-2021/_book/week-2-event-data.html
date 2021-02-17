@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 2: Event data | MMES Quantitative Research Methods Oxford 2021</title>
+  <meta name="description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 2: Event data | MMES Quantitative Research Methods Oxford 2021" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/Bahre_Fars.jpeg" />
+  <meta property="og:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="cjbarrie/bookdown_template" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 2: Event data | MMES Quantitative Research Methods Oxford 2021" />
+  
+  <meta name="twitter:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:image" content="images/Bahre_Fars.jpeg" />
+
+<meta name="author" content="Christopher Barrie" />
+
+
+<meta name="date" content="2021-02-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="week-1-surveys-and-experiments.html"/>
+<link rel="next" href="week-3-spatial-data.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
+<script src="libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.css" rel="stylesheet" />
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css" rel="stylesheet" />
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MMES Oxford 2021</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>A note on this document</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#structure-of-seminars"><i class="fa fa-check"></i>Structure of seminars</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#take-home-assignments"><i class="fa fa-check"></i>Take-home assignments</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#a-final-word"><i class="fa fa-check"></i>A final word</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-surveys-and-experiments.html"><a href="week-1-surveys-and-experiments.html"><i class="fa fa-check"></i>Week 1: Surveys and experiments</a></li>
+<li class="chapter" data-level="" data-path="week-2-event-data.html"><a href="week-2-event-data.html"><i class="fa fa-check"></i>Week 2: Event data</a></li>
+<li class="chapter" data-level="" data-path="week-3-spatial-data.html"><a href="week-3-spatial-data.html"><i class="fa fa-check"></i>Week 3: Spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-4-online-and-text-data.html"><a href="week-4-online-and-text-data.html"><i class="fa fa-check"></i>Week 4: Online and text data</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html"><i class="fa fa-check"></i>Introduction to R</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-with-r-at-home"><i class="fa fa-check"></i>Getting started with R at home</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#some-basic-information"><i class="fa fa-check"></i>Some basic information</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-in-rstudio"><i class="fa fa-check"></i>Getting Started in RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#a-simple-example"><i class="fa fa-check"></i>A simple example</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#loading-packages"><i class="fa fa-check"></i>Loading packages</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#saving-your-objects-plots-and-scripts"><i class="fa fa-check"></i>Saving your objects, plots and scripts</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#knowing-where-r-saves-your-documents"><i class="fa fa-check"></i>Knowing where R saves your documents</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#practicing-in-r"><i class="fa fa-check"></i>Practicing in R</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#one-final-note"><i class="fa fa-check"></i>One final note</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html"><i class="fa fa-check"></i>Week 1 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#investigating-support-for-sisi-in-egypt"><i class="fa fa-check"></i>Investigating support for Sisi in Egypt</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#preparing-the-dataset"><i class="fa fa-check"></i>Preparing the dataset</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#visualizing-the-data"><i class="fa fa-check"></i>Visualizing the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#subsetting-the-data"><i class="fa fa-check"></i>Subsetting the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#coding-tasks"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html"><i class="fa fa-check"></i>Week 2 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#analysing-protest-in-the-syrian-revolution"><i class="fa fa-check"></i>Analysing protest in the Syrian Revolution</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#read-in-the-data"><i class="fa fa-check"></i>Read in the data</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#time-series-plots"><i class="fa fa-check"></i>Time-series plots</a></li>
+<li><a href="week-2-exercise.html#using-the-tidyverse">Using the <tt>tidyverse</tt></a></li>
+<li><a href="week-2-exercise.html#using-ggplot">Using <tt>ggplot</tt></a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#working-with-dates"><i class="fa fa-check"></i>Working with dates</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#visualizing-data-on-maps"><i class="fa fa-check"></i>Visualizing data on maps:</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#coding-tasks-1"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html"><i class="fa fa-check"></i>Week 3 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#contingency-tables"><i class="fa fa-check"></i>Contingency tables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#recoding-variables"><i class="fa fa-check"></i>Recoding variables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#visualizing-spatial-data"><i class="fa fa-check"></i>Visualizing spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#back-to-the-mena"><i class="fa fa-check"></i>Back to the MENA</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#coding-tasks-2"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html"><i class="fa fa-check"></i>Week 4 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#preparing-and-plotting-the-data"><i class="fa fa-check"></i>Preparing and plotting the data</a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#conducting-t-tests"><i class="fa fa-check"></i>Conducting t-tests</a></li>
+<li><a href="week-4-exercise.html#using-gtrendsr">Using <tt>gtrendsR</tt></a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#coding-tasks-3"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MMES Quantitative Research Methods Oxford 2021</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week-2-event-data" class="section level1 unnumbered">
+<h1>Week 2: Event data</h1>
+<p>Event data can take on a wide variety of different forms. This week, we will be reading several articles that each use one or other of these types of data. Events, as you will see, are very broadly defined. In the paper by <span class="citation">Bove and Gokmen (<a href="#ref-Bove2017" role="doc-biblioref">2017</a>)</span>, events take the form of international conflict events; in the article by <span class="citation">Mazur (<a href="#ref-Mazur2019" role="doc-biblioref">2019</a>)</span> they are protest events in the early stages of the Syrian Revolution. What is common across these literatures is a concern to explain systematically the occurrence of discrete events in time. Each of the papers has been selected to give you a flavour of what forms event data might take, as well as the potential benefits and pitfalls of their collection and use.</p>
+<p>The article by <span class="citation">Mazur (<a href="#ref-Mazur2019" role="doc-biblioref">2019</a>)</span> details the sources and techniques used for collecting event data, as well as the possible biases introduced by the use of these sources. The paper by <span class="citation">Earl et al. (<a href="#ref-Earl2004" role="doc-biblioref">2004</a>)</span> tackles questions related to the use of newspapers for studying collective action phenomena, while that by <span class="citation">Baum and Zhukov (<a href="#ref-Baum2015" role="doc-biblioref">2015</a>)</span> engages a similar topic but asks questions specifically of the use of newspapers in non-democratic contexts.</p>
+<p>The paper by <span class="citation">Bove and Gokmen (<a href="#ref-Bove2017" role="doc-biblioref">2017</a>)</span> takes up a question that has received outsized attention in Middle East studies: the clash of civilizations theory first proposed by Samuel P. Huntington in a <em>Foreign Affairs</em> article <a href="https://www.foreignaffairs.com/articles/united-states/1993-06-01/clash-civilizations">here</a>. This will give us the opportunity to engage questions of measurement validity in relation not only to the culture but also to conflict generally—questions taken up in the general readings by <span class="citation">Kalyvas (<a href="#ref-Kalyvas2003" role="doc-biblioref">2003</a>)</span>, <span class="citation">Wedeen (<a href="#ref-Wedeen2002" role="doc-biblioref">2002</a>)</span>, and <span class="citation">Adcock and Collier (<a href="#ref-Adcock2001" role="doc-biblioref">2001</a>)</span>. For those interested, you’ll also find references to a back-and-forth between Huntington and the authors of a previous test of his conjecture listed in the further case studies <span class="citation">(Huntington <a href="#ref-Huntington2000" role="doc-biblioref">2000</a>; Oneal and Russett <a href="#ref-Oneal2000" role="doc-biblioref">2000</a>; Russett, Oneal, and Cox <a href="#ref-Russett2000" role="doc-biblioref">2000</a>)</span>.</p>
+<p><strong>Questions to consider in the seminar</strong>: What issues need to be considered when categorizing events into discrete categories? What constitutes a valid sample from which to make population-based inferences? Are newspapers valid sources of data? Is information bias particularly acute in non-democracies? Can we accurately measure contentious and disruptive political phenomena (war, conflict, protest)? Can we measure culture?</p>
+<p><strong>Required reading</strong>:</p>
+<ul>
+<li><span class="citation">Chiozza (<a href="#ref-Chiozza2002" role="doc-biblioref">2002</a>)</span></li>
+<li><span class="citation">Mazur (<a href="#ref-Mazur2019" role="doc-biblioref">2019</a>)</span></li>
+</ul>
+<p><strong>General reading</strong>:</p>
+<ul>
+<li><span class="citation">Baum and Zhukov (<a href="#ref-Baum2015" role="doc-biblioref">2015</a>)</span></li>
+<li><span class="citation">Earl et al. (<a href="#ref-Earl2004" role="doc-biblioref">2004</a>)</span></li>
+<li><span class="citation">Kalyvas (<a href="#ref-Kalyvas2003" role="doc-biblioref">2003</a>)</span></li>
+<li><span class="citation">Wedeen (<a href="#ref-Wedeen2002" role="doc-biblioref">2002</a>)</span></li>
+</ul>
+<p><strong>Additional case studies reading</strong>:</p>
+<ul>
+<li><span class="citation">Huntington (<a href="#ref-Huntington2000" role="doc-biblioref">2000</a>)</span></li>
+<li><span class="citation">Russett, Oneal, and Cox (<a href="#ref-Russett2000" role="doc-biblioref">2000</a>)</span></li>
+<li><span class="citation">Oneal and Russett (<a href="#ref-Oneal2000" role="doc-biblioref">2000</a>)</span></li>
+</ul>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Adcock2001">
+<p>Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qualitative and Quantitative Research.” <em>American Political Science Review</em> 95 (3): 529–46.</p>
+</div>
+<div id="ref-Baum2015">
+<p>Baum, Matthew A., and Yuri M. Zhukov. 2015. “Filtering Revolution: Reporting Bias in International Newspaper Coverage of the Libyan Civil War.” <em>Journal of Peace Research</em> 52 (3): 384–400.</p>
+</div>
+<div id="ref-Bove2017">
+<p>Bove, Vincenzo, and Gunes Gokmen. 2017. “Cultural Distance and Interstate Conflicts.” <em>British Journal of Political Science</em> 47 (4): 939–49. <a href="https://doi.org/10.1017/S0007123415000551">https://doi.org/10.1017/S0007123415000551</a>.</p>
+</div>
+<div id="ref-Chiozza2002">
+<p>Chiozza, Giacomo. 2002. “Is There a Clash of Civilizations? Evidence from Patterns of International Conflict Involvement, 1946-97.” <em>Journal of Peace Research</em> 39 (6): 711–34. <a href="https://doi.org/10.1177/0022343302039006004">https://doi.org/10.1177/0022343302039006004</a>.</p>
+</div>
+<div id="ref-Earl2004">
+<p>Earl, Jennifer, Andrew Martin, John D McCarthy, and Sarah A Soule. 2004. “The Use of Newspaper Data in the Study of Collective Action.” <em>Annual Review of Sociology</em> 30 (1): 65–80.</p>
+</div>
+<div id="ref-Huntington2000">
+<p>Huntington, Samuel P. 2000. “Try Again: A Reply to Russett, Oneal &amp; Cox.” <em>Journal of Peace Research</em> 37 (5): 609–10. <a href="https://doi.org/10.1177/0022343300037005004">https://doi.org/10.1177/0022343300037005004</a>.</p>
+</div>
+<div id="ref-Kalyvas2003">
+<p>Kalyvas, Stathis N. 2003. “The Ontology of ‘Political Violence’: Action and Identity in Civil Wars.” <em>Perspectives on Politics</em> 1 (03): 475–94. <a href="https://doi.org/10.1017/S1537592703000355">https://doi.org/10.1017/S1537592703000355</a>.</p>
+</div>
+<div id="ref-Mazur2019">
+<p>Mazur, Kevin. 2019. “State Networks and Intra-Ethnic Group Variation in the 2011 Syrian Uprising.” <em>Comparative Political Studies</em> 52 (7): 995–1027. <a href="https://doi.org/10.1177/0010414018806536">https://doi.org/10.1177/0010414018806536</a>.</p>
+</div>
+<div id="ref-Oneal2000">
+<p>Oneal, John R., and Bruce M. Russett. 2000. “A Response to Huntington.” <em>Journal of Peace Research</em> 37 (5): 611–12. <a href="https://doi.org/10.1177/0022343300037005005">https://doi.org/10.1177/0022343300037005005</a>.</p>
+</div>
+<div id="ref-Russett2000">
+<p>Russett, Bruce M., John R. Oneal, and Michaelene Cox. 2000. “Clash of Civilizations, or Realism and Liberalism Déjà Vu? Some Evidence.” <em>Journal of Peace Research</em> 37 (5): 583–608. <a href="https://doi.org/10.1177/0022343300037005003">https://doi.org/10.1177/0022343300037005003</a>.</p>
+</div>
+<div id="ref-Wedeen2002">
+<p>Wedeen, Lisa. 2002. “Conceptualizing Culture: Possibilities for Political Science.” <em>American Political Science Review</em> 96 (4): 713–28. <a href="https://doi.org/10.1017/S0003055402000400">https://doi.org/10.1017/S0003055402000400</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week-1-surveys-and-experiments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week-3-spatial-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-week2.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MMES-2021.pdf"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

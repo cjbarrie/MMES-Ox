@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 1 Exercise | MMES Quantitative Research Methods Oxford 2021</title>
+  <meta name="description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 1 Exercise | MMES Quantitative Research Methods Oxford 2021" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/Bahre_Fars.jpeg" />
+  <meta property="og:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="cjbarrie/bookdown_template" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 1 Exercise | MMES Quantitative Research Methods Oxford 2021" />
+  
+  <meta name="twitter:description" content="This is a working version of MMES Quant. Methods materials book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:image" content="images/Bahre_Fars.jpeg" />
+
+<meta name="author" content="Christopher Barrie" />
+
+
+<meta name="date" content="2021-02-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction-to-r.html"/>
+<link rel="next" href="week-2-exercise.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
+<script src="libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.css" rel="stylesheet" />
+<link href="libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css" rel="stylesheet" />
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js"></script>
+<script src="libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">MMES Oxford 2021</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>A note on this document</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#structure-of-seminars"><i class="fa fa-check"></i>Structure of seminars</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#take-home-assignments"><i class="fa fa-check"></i>Take-home assignments</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#a-final-word"><i class="fa fa-check"></i>A final word</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-surveys-and-experiments.html"><a href="week-1-surveys-and-experiments.html"><i class="fa fa-check"></i>Week 1: Surveys and experiments</a></li>
+<li class="chapter" data-level="" data-path="week-2-event-data.html"><a href="week-2-event-data.html"><i class="fa fa-check"></i>Week 2: Event data</a></li>
+<li class="chapter" data-level="" data-path="week-3-spatial-data.html"><a href="week-3-spatial-data.html"><i class="fa fa-check"></i>Week 3: Spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-4-online-and-text-data.html"><a href="week-4-online-and-text-data.html"><i class="fa fa-check"></i>Week 4: Online and text data</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html"><i class="fa fa-check"></i>Introduction to R</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-with-r-at-home"><i class="fa fa-check"></i>Getting started with R at home</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#some-basic-information"><i class="fa fa-check"></i>Some basic information</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#getting-started-in-rstudio"><i class="fa fa-check"></i>Getting Started in RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#a-simple-example"><i class="fa fa-check"></i>A simple example</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#loading-packages"><i class="fa fa-check"></i>Loading packages</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#saving-your-objects-plots-and-scripts"><i class="fa fa-check"></i>Saving your objects, plots and scripts</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#knowing-where-r-saves-your-documents"><i class="fa fa-check"></i>Knowing where R saves your documents</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#practicing-in-r"><i class="fa fa-check"></i>Practicing in R</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-r.html"><a href="introduction-to-r.html#one-final-note"><i class="fa fa-check"></i>One final note</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html"><i class="fa fa-check"></i>Week 1 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#investigating-support-for-sisi-in-egypt"><i class="fa fa-check"></i>Investigating support for Sisi in Egypt</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#preparing-the-dataset"><i class="fa fa-check"></i>Preparing the dataset</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#visualizing-the-data"><i class="fa fa-check"></i>Visualizing the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#subsetting-the-data"><i class="fa fa-check"></i>Subsetting the data</a></li>
+<li class="chapter" data-level="" data-path="week-1-exercise.html"><a href="week-1-exercise.html#coding-tasks"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html"><i class="fa fa-check"></i>Week 2 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#analysing-protest-in-the-syrian-revolution"><i class="fa fa-check"></i>Analysing protest in the Syrian Revolution</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#read-in-the-data"><i class="fa fa-check"></i>Read in the data</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#time-series-plots"><i class="fa fa-check"></i>Time-series plots</a></li>
+<li><a href="week-2-exercise.html#using-the-tidyverse">Using the <tt>tidyverse</tt></a></li>
+<li><a href="week-2-exercise.html#using-ggplot">Using <tt>ggplot</tt></a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#working-with-dates"><i class="fa fa-check"></i>Working with dates</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#visualizing-data-on-maps"><i class="fa fa-check"></i>Visualizing data on maps:</a></li>
+<li class="chapter" data-level="" data-path="week-2-exercise.html"><a href="week-2-exercise.html#coding-tasks-1"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html"><i class="fa fa-check"></i>Week 3 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#contingency-tables"><i class="fa fa-check"></i>Contingency tables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#recoding-variables"><i class="fa fa-check"></i>Recoding variables</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#visualizing-spatial-data"><i class="fa fa-check"></i>Visualizing spatial data</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#back-to-the-mena"><i class="fa fa-check"></i>Back to the MENA</a></li>
+<li class="chapter" data-level="" data-path="week-3-exercise.html"><a href="week-3-exercise.html#coding-tasks-2"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html"><i class="fa fa-check"></i>Week 4 Exercise</a><ul>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#preparing-and-plotting-the-data"><i class="fa fa-check"></i>Preparing and plotting the data</a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#conducting-t-tests"><i class="fa fa-check"></i>Conducting t-tests</a></li>
+<li><a href="week-4-exercise.html#using-gtrendsr">Using <tt>gtrendsR</tt></a></li>
+<li class="chapter" data-level="" data-path="week-4-exercise.html"><a href="week-4-exercise.html#coding-tasks-3"><i class="fa fa-check"></i>Coding tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MMES Quantitative Research Methods Oxford 2021</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week-1-exercise" class="section level1 unnumbered">
+<h1>Week 1 Exercise</h1>
+<div id="investigating-support-for-sisi-in-egypt" class="section level2 unnumbered">
+<h2>Investigating support for Sisi in Egypt</h2>
+<p>We are now ready to tackle a real world example from one of the readings for this week—the <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/703209?mobileUi=0">article</a> by Rory Truex and Daniel L. Tavana investigating support for Sisi in Egypt using implicit attitudes methods. Below, we will use the same data as used in the article. The full replication data and Questionnaire can be located <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OFK4L6">here</a>. However, in the exercise below, we will be using, to begin with, a simplified dataset containing a subset of these data, which I have prepared for the purposes of this exercise.</p>
+</div>
+<div id="preparing-the-dataset" class="section level2 unnumbered">
+<h2>Preparing the dataset</h2>
+<p>The simplified dataset can be found on my GitHub page <a href="https://github.com/cjbarrie/teaching_material">here</a>. The table below displays the variables included in the dataset. Search through these to get acquainted with how each item is measured.</p>
+<p>Our first task is to read in the data from the url to my Github page. The dataset contains a number of variables. To begin with we’re going to work with just seven of these. To create a shorter version of these data including only the variables (columns) we want, we can use the <tt>tidyverse</tt> command types, which utilize “pipe” functions— %&gt;% — to select the variables we want. In base R we could do the same thing. Both approaches to subsetting the data and generating a new dataframe are described below.</p>
+<p>For more practice on the <tt>tidyverse</tt>, look no further than <a href="https://r4ds.had.co.nz/">R for Data Scien ce</a>, which is available free online. In coming weeks, I will only be using <tt>tidyverse</tt> syntax so it is worth getting used to!</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="week-1-exercise.html#cb17-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb17-2"><a href="week-1-exercise.html#cb17-2"></a><span class="kw">library</span>(patchwork)</span>
+<span id="cb17-3"><a href="week-1-exercise.html#cb17-3"></a></span>
+<span id="cb17-4"><a href="week-1-exercise.html#cb17-4"></a>dat &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/cjbarrie/teaching_material/master/sisi_data.csv&quot;</span>)</span>
+<span id="cb17-5"><a href="week-1-exercise.html#cb17-5"></a></span>
+<span id="cb17-6"><a href="week-1-exercise.html#cb17-6"></a><span class="co">#tidyverse way:</span></span>
+<span id="cb17-7"><a href="week-1-exercise.html#cb17-7"></a></span>
+<span id="cb17-8"><a href="week-1-exercise.html#cb17-8"></a>sisi_data &lt;-<span class="st"> </span>dat <span class="op">%&gt;%</span></span>
+<span id="cb17-9"><a href="week-1-exercise.html#cb17-9"></a><span class="st">  </span><span class="kw">select</span>(STIAT.test, approve_abdel_rev, edu,</span>
+<span id="cb17-10"><a href="week-1-exercise.html#cb17-10"></a>         gender, income,</span>
+<span id="cb17-11"><a href="week-1-exercise.html#cb17-11"></a>         location, region)</span>
+<span id="cb17-12"><a href="week-1-exercise.html#cb17-12"></a></span>
+<span id="cb17-13"><a href="week-1-exercise.html#cb17-13"></a><span class="co">#base R way:</span></span>
+<span id="cb17-14"><a href="week-1-exercise.html#cb17-14"></a></span>
+<span id="cb17-15"><a href="week-1-exercise.html#cb17-15"></a>myvars &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;STIAT.test&quot;</span>, <span class="st">&quot;approve_abdel_rev&quot;</span>, </span>
+<span id="cb17-16"><a href="week-1-exercise.html#cb17-16"></a>            <span class="st">&quot;edu&quot;</span>, <span class="st">&quot;gender&quot;</span>, <span class="st">&quot;income&quot;</span>, <span class="st">&quot;location&quot;</span>, </span>
+<span id="cb17-17"><a href="week-1-exercise.html#cb17-17"></a>            <span class="st">&quot;region&quot;</span>)</span>
+<span id="cb17-18"><a href="week-1-exercise.html#cb17-18"></a>sisi_data &lt;-<span class="st"> </span>dat[myvars]</span></code></pre></div>
+<p>The table below provides an overview of these data and what they are measuring.</p>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="15%" />
+<col width="64%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[1]</td>
+<td>STIAT.test</td>
+<td>IAT “D-”score</td>
+</tr>
+<tr class="even">
+<td>[2]</td>
+<td>approve_abdel_rev</td>
+<td>Explicit SISI approval rating</td>
+</tr>
+<tr class="odd">
+<td>[3]</td>
+<td>edu</td>
+<td>Education (1-6 scale: 1=Elementary; 6=MA and above)</td>
+</tr>
+<tr class="even">
+<td>[4]</td>
+<td>gender</td>
+<td>Gender (1=male/2=female)</td>
+</tr>
+<tr class="odd">
+<td>[5]</td>
+<td>income</td>
+<td>Income (1-11 scale: 1= Less than 500 LE; 11= More than 10,000 LE)</td>
+</tr>
+<tr class="even">
+<td>[6]</td>
+<td>location</td>
+<td>Province in which respondent lives</td>
+</tr>
+</tbody>
+</table>
+<p>Now let’s look at how each of these variables is stored in R.</p>
+<pre><code>## &#39;data.frame&#39;:    810 obs. of  7 variables:
+##  $ STIAT.test       : num  -0.0395 -0.1634 -0.3407 0.1386 -0.1817 ...
+##  $ approve_abdel_rev: int  2 3 2 NA 3 3 1 NA 3 2 ...
+##  $ edu              : int  5 5 5 4 5 5 5 5 5 5 ...
+##  $ gender           : int  1 1 1 1 1 1 1 2 1 1 ...
+##  $ income           : int  3 3 1 2 1 2 3 2 2 3 ...
+##  $ location         : chr  &quot;benisuef&quot; &quot;cairo&quot; &quot;alexandria&quot; &quot;dakahlia&quot; ...
+##  $ region           : chr  &quot;upper&quot; &quot;cairo&quot; &quot;alex&quot; &quot;delta&quot; ...</code></pre>
+<p>The first variable in our dataframe is <em>STIAT.test</em>. This is the main outcome variable—the D-score—from the IAT procedure used in the article by Truex and Tavana. We can see that this variable is stored as a numeric data type. We can compare this to other data types in the variables column. For example, <em>edu</em> is stored as an integer. This is because <em>edu</em> is a categorical variable coded at increasing integer values on a 1-6 scale.</p>
+<p>There are six main data types, which are:</p>
+<ol style="list-style-type: decimal">
+<li>int: integers</li>
+<li>dbl: doubles (i.e., real numbers)</li>
+<li>chr: character vectors, or strings (i.e., words or sequences of letters)</li>
+<li>lgl: logical, can take values TRUE or FALSE</li>
+<li>fctr: factors, which are categorical variables with fixed possible values</li>
+<li>date: dates</li>
+</ol>
+</div>
+<div id="visualizing-the-data" class="section level2 unnumbered">
+<h2>Visualizing the data</h2>
+<p>Using <em>STIAT.test</em> we can easily reproduce the graph from Figure 3 in the paper. Figure 3 is simply a histogram representing the distribution of this variable. Recall that positive scores indicate more favourable attitudes toward Sisi.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="week-1-exercise.html#cb19-1"></a><span class="kw">hist</span>(sisi_data<span class="op">$</span>STIAT.test)</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>With a bit of help from the <tt>ggplot2</tt> package, we can get our graph to look like the published figure in the paper. This package is used by a large number of practitioners in R. It departs somewhat from the logic of the base R language—which you will be more used to—but is arguably more intuitive. The best intro. to data visualization with <tt>ggplot2</tt> can be found <a href="https://r4ds.had.co.nz/data-visualisation.html">here</a>. Another very good tutorial on <tt>ggplot2</tt>, and one which explains the key differences to visualization in base R, can be found <a href="https://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html">here</a>.</p>
+<p>Let’s walk through this code step by step to better understand what <tt>ggplot2</tt> is doing here. <tt>ggplot</tt> commands basically just tell R first what dataframe we’re using; i.e., <code>ggplot(data = sisi_data,</code> and after the comma we have a section where we specify our “aesthetic mappings” (or <code>aes</code>). In other words, this is where we tell R what we want on the x- and y-axis. Given that this is a histogram, we don’t have to specify the y-axis because we know that this will simply be a frequency mapping of whatever the x-axis variable is (a histogram is simply a graph of relative frequencies of the x-axis variable over the range of its observed values). We specify on the x- (horizontal) axis, then, STIAT.test, which is the variable measuring implicit attitudes toward Sisi. We then specify what type of graph we want. Here, we select <code>geom_histogram</code> as we want a histogram of the frequencies of each “bin” of this variable. We specify how many of these breaks we want with the argument <code>bins=52</code>. This simply means breaks should run from -1.3 to 1.3 with .05 increments. Why have I chosen this? Well, since our variable runs from -1.3 to 1.3, the range of the variable is 2.6 (1.3+1.3). If we divide 2.6 by .05, we get a nice round number of 52, which effectively visualizes the frequency distribution of this variable. Everything after this is included just to change the colours and theme (i.e., styling) of the graph. You can play around with this and see what happens.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="week-1-exercise.html#cb20-1"></a><span class="kw">ggplot</span>(<span class="dt">data=</span>sisi_data, <span class="kw">aes</span>(<span class="dt">x=</span>STIAT.test)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb20-2"><a href="week-1-exercise.html#cb20-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins=</span><span class="dv">52</span>, </span>
+<span id="cb20-3"><a href="week-1-exercise.html#cb20-3"></a>                 <span class="dt">col=</span><span class="st">&quot;grey30&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;white&quot;</span>,</span>
+<span id="cb20-4"><a href="week-1-exercise.html#cb20-4"></a>                 <span class="dt">alpha =</span> <span class="fl">.75</span>) <span class="op">+</span><span class="st"> </span><span class="kw">theme_bw</span>()</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p>Try running this code but change the number of bins we are using. Make sure you understand what is happening to these data when you do this. We can also subset these data by male and female to compare the relative distributions of scores. What do we see here?</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="week-1-exercise.html#cb21-1"></a><span class="co">##tidyverse &quot;piping&quot; way to subset and visualize together</span></span>
+<span id="cb21-2"><a href="week-1-exercise.html#cb21-2"></a>g1 &lt;-<span class="st"> </span>sisi_data <span class="op">%&gt;%</span></span>
+<span id="cb21-3"><a href="week-1-exercise.html#cb21-3"></a><span class="st">  </span><span class="kw">filter</span>(gender<span class="op">==</span><span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># male ==1 in this dataset</span></span>
+<span id="cb21-4"><a href="week-1-exercise.html#cb21-4"></a><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x=</span>STIAT.test)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb21-5"><a href="week-1-exercise.html#cb21-5"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins=</span><span class="dv">52</span>, </span>
+<span id="cb21-6"><a href="week-1-exercise.html#cb21-6"></a>                 <span class="dt">col=</span><span class="st">&quot;grey30&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;white&quot;</span>,</span>
+<span id="cb21-7"><a href="week-1-exercise.html#cb21-7"></a>                 <span class="dt">alpha =</span> <span class="fl">.75</span>) <span class="op">+</span><span class="st"> </span><span class="kw">theme_bw</span>() <span class="op">+</span></span>
+<span id="cb21-8"><a href="week-1-exercise.html#cb21-8"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Male&quot;</span>)</span>
+<span id="cb21-9"><a href="week-1-exercise.html#cb21-9"></a></span>
+<span id="cb21-10"><a href="week-1-exercise.html#cb21-10"></a>g2 &lt;-<span class="st"> </span>sisi_data <span class="op">%&gt;%</span></span>
+<span id="cb21-11"><a href="week-1-exercise.html#cb21-11"></a><span class="st">  </span><span class="kw">filter</span>(gender<span class="op">==</span><span class="dv">2</span>) <span class="op">%&gt;%</span></span>
+<span id="cb21-12"><a href="week-1-exercise.html#cb21-12"></a><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x=</span>STIAT.test)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb21-13"><a href="week-1-exercise.html#cb21-13"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins=</span><span class="dv">52</span>, </span>
+<span id="cb21-14"><a href="week-1-exercise.html#cb21-14"></a>                 <span class="dt">col=</span><span class="st">&quot;grey30&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;white&quot;</span>,</span>
+<span id="cb21-15"><a href="week-1-exercise.html#cb21-15"></a>                 <span class="dt">alpha =</span> <span class="fl">.75</span>) <span class="op">+</span><span class="st"> </span><span class="kw">theme_bw</span>() <span class="op">+</span></span>
+<span id="cb21-16"><a href="week-1-exercise.html#cb21-16"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Female&quot;</span>)</span>
+<span id="cb21-17"><a href="week-1-exercise.html#cb21-17"></a></span>
+<span id="cb21-18"><a href="week-1-exercise.html#cb21-18"></a>g1 <span class="op">+</span><span class="st"> </span>g2</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="week-1-exercise.html#cb22-1"></a><span class="co">##base R way: subsetting data then plotting</span></span>
+<span id="cb22-2"><a href="week-1-exercise.html#cb22-2"></a></span>
+<span id="cb22-3"><a href="week-1-exercise.html#cb22-3"></a>sisi_data_male &lt;-<span class="st"> </span><span class="kw">subset</span>(sisi_data, gender<span class="op">==</span><span class="dv">1</span>)</span>
+<span id="cb22-4"><a href="week-1-exercise.html#cb22-4"></a>sisi_data_female &lt;-<span class="st"> </span><span class="kw">subset</span>(sisi_data, gender<span class="op">==</span><span class="dv">2</span>)</span>
+<span id="cb22-5"><a href="week-1-exercise.html#cb22-5"></a></span>
+<span id="cb22-6"><a href="week-1-exercise.html#cb22-6"></a><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#specify visualization params.</span></span>
+<span id="cb22-7"><a href="week-1-exercise.html#cb22-7"></a><span class="kw">hist</span>(sisi_data_male<span class="op">$</span>STIAT.test, </span>
+<span id="cb22-8"><a href="week-1-exercise.html#cb22-8"></a>     <span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="fl">1.3</span>, <span class="fl">1.3</span>), <span class="dt">breaks =</span> <span class="dv">52</span>, <span class="dt">main=</span><span class="st">&quot;Male&quot;</span>)</span>
+<span id="cb22-9"><a href="week-1-exercise.html#cb22-9"></a><span class="kw">hist</span>(sisi_data_female<span class="op">$</span>STIAT.test, </span>
+<span id="cb22-10"><a href="week-1-exercise.html#cb22-10"></a>     <span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="fl">1.3</span>, <span class="fl">1.3</span>), <span class="dt">breaks =</span> <span class="dv">52</span>, <span class="dt">main=</span><span class="st">&quot;Female&quot;</span>)</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-21-2.png" width="672" /></p>
+</div>
+<div id="subsetting-the-data" class="section level2 unnumbered">
+<h2>Subsetting the data</h2>
+<p>What can we tell from this? Our sample is heavily male, as becomes clear from the frequencies displayed in the histogram. The mean of both samples is nonetheless pretty similar at around .05. To calculate the mean across both genders in R, we can run the following lines of code:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="week-1-exercise.html#cb23-1"></a>male &lt;-<span class="st"> </span><span class="kw">subset</span>(sisi_data<span class="op">$</span>STIAT.test,sisi_data<span class="op">$</span>gender<span class="op">==</span><span class="dv">1</span>)</span>
+<span id="cb23-2"><a href="week-1-exercise.html#cb23-2"></a>female &lt;-<span class="st"> </span><span class="kw">subset</span>(sisi_data<span class="op">$</span>STIAT.test,sisi_data<span class="op">$</span>gender<span class="op">==</span><span class="dv">2</span>)</span>
+<span id="cb23-3"><a href="week-1-exercise.html#cb23-3"></a></span>
+<span id="cb23-4"><a href="week-1-exercise.html#cb23-4"></a><span class="kw">mean</span>(male)</span></code></pre></div>
+<pre><code>## [1] 0.0564617</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="week-1-exercise.html#cb25-1"></a><span class="kw">mean</span>(female)</span></code></pre></div>
+<pre><code>## [1] 0.05882674</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="week-1-exercise.html#cb27-1"></a><span class="co">#alternatively  use tapply:</span></span>
+<span id="cb27-2"><a href="week-1-exercise.html#cb27-2"></a><span class="kw">tapply</span>(sisi_data<span class="op">$</span>STIAT.test, </span>
+<span id="cb27-3"><a href="week-1-exercise.html#cb27-3"></a>       sisi_data<span class="op">$</span>gender, mean)</span></code></pre></div>
+<pre><code>##          1          2 
+## 0.05646170 0.05882674</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="week-1-exercise.html#cb29-1"></a><span class="co">#the tidyverse way:</span></span>
+<span id="cb29-2"><a href="week-1-exercise.html#cb29-2"></a><span class="co">#mean for males:</span></span>
+<span id="cb29-3"><a href="week-1-exercise.html#cb29-3"></a>sisi_data <span class="op">%&gt;%</span></span>
+<span id="cb29-4"><a href="week-1-exercise.html#cb29-4"></a><span class="st">  </span><span class="kw">filter</span>(gender<span class="op">==</span><span class="dv">1</span>) <span class="op">%&gt;%</span></span>
+<span id="cb29-5"><a href="week-1-exercise.html#cb29-5"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="kw">mean</span>(STIAT.test))</span></code></pre></div>
+<pre><code>##   mean(STIAT.test)
+## 1        0.0564617</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="week-1-exercise.html#cb31-1"></a><span class="co">#mean for females:</span></span>
+<span id="cb31-2"><a href="week-1-exercise.html#cb31-2"></a>sisi_data <span class="op">%&gt;%</span></span>
+<span id="cb31-3"><a href="week-1-exercise.html#cb31-3"></a><span class="st">  </span><span class="kw">filter</span>(gender<span class="op">==</span><span class="dv">2</span>) <span class="op">%&gt;%</span></span>
+<span id="cb31-4"><a href="week-1-exercise.html#cb31-4"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="kw">mean</span>(STIAT.test))</span></code></pre></div>
+<pre><code>##   mean(STIAT.test)
+## 1       0.05882674</code></pre>
+<p>In this paper about attitudes toward Sisi, the authors argue that we can find evidence of attitude dissociation. They make this inference, in a first stage, on the basis of a weak correlation between respondents’ answers to a question directly probing support for Sisi and the implicit attitudes questions that aims to uncover undisclosed or ‘implicit’ attitudes. The relevant variable for the direct support measure is named ‘approve_abdel_rev’ in this dataset and it’s measured on a 1-4 scale. These variables names aren’t particularly intuitive. Let’s rename them something more informative for the purposes of the exercises that follow. We’ll call the direct support question <em>direct_sup</em> and the indirect, or “implicit”, support question <em>indirect_sup</em>. The code to this, in both tidyverse and base R, is below.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="week-1-exercise.html#cb33-1"></a><span class="co">#the base R way:</span></span>
+<span id="cb33-2"><a href="week-1-exercise.html#cb33-2"></a><span class="kw">names</span>(sisi_data)[<span class="kw">names</span>(sisi_data) <span class="op">==</span><span class="st"> &quot;approve_abdel_rev&quot;</span>] &lt;-<span class="st"> &quot;direct_sup&quot;</span></span>
+<span id="cb33-3"><a href="week-1-exercise.html#cb33-3"></a><span class="kw">names</span>(sisi_data)[<span class="kw">names</span>(sisi_data) <span class="op">==</span><span class="st"> &quot;STIAT.test&quot;</span>] &lt;-<span class="st"> &quot;indirect_sup&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="week-1-exercise.html#cb34-1"></a><span class="co">#the tidyverse way:</span></span>
+<span id="cb34-2"><a href="week-1-exercise.html#cb34-2"></a>sisi_data &lt;-<span class="st"> </span>sisi_data <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb34-3"><a href="week-1-exercise.html#cb34-3"></a><span class="st">  </span><span class="kw">rename</span>(<span class="dt">direct_sup =</span> approve_abdel_rev,</span>
+<span id="cb34-4"><a href="week-1-exercise.html#cb34-4"></a>    <span class="dt">indirect_sup =</span> STIAT.test)</span></code></pre></div>
+<p>We can recreate their scatter plot in Figure 6 with the following lines of code, again in ggplot.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="week-1-exercise.html#cb35-1"></a><span class="kw">ggplot</span>(sisi_data, <span class="kw">aes</span>(<span class="dt">x=</span>indirect_sup, <span class="dt">y=</span>direct_sup)) <span class="op">+</span></span>
+<span id="cb35-2"><a href="week-1-exercise.html#cb35-2"></a><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">color=</span><span class="st">&quot;darkblue&quot;</span>, <span class="dt">alpha=</span>.<span class="dv">25</span>,</span>
+<span id="cb35-3"><a href="week-1-exercise.html#cb35-3"></a>              <span class="dt">size=</span><span class="fl">1.25</span>, <span class="dt">width=</span>.<span class="dv">5</span>, <span class="dt">height=</span><span class="fl">1.25</span>) <span class="op">+</span></span>
+<span id="cb35-4"><a href="week-1-exercise.html#cb35-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span>lm, <span class="dt">se=</span><span class="ot">FALSE</span>, <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb35-5"><a href="week-1-exercise.html#cb35-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Implicit Attitudes Towards Sisi&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb35-6"><a href="week-1-exercise.html#cb35-6"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Explicit Attitudes Towards Sisi&quot;</span>) <span class="op">+</span></span>
+<span id="cb35-7"><a href="week-1-exercise.html#cb35-7"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>Does this pattern of dissociation hold across all regions in the sample? To check this we can use the ‘facet_wrap’ function that is part of ggplot. To use this, we simply specify a variable in the dataframe by which we wish to ‘facet’ our visualization. In essence, what we are doing here is running the same lines of code for subsets of the dataframe. Each subset in this case will be the data for a particular region.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="week-1-exercise.html#cb37-1"></a><span class="kw">ggplot</span>(sisi_data, <span class="kw">aes</span>(<span class="dt">x=</span>indirect_sup, <span class="dt">y=</span>direct_sup)) <span class="op">+</span></span>
+<span id="cb37-2"><a href="week-1-exercise.html#cb37-2"></a><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">color=</span><span class="st">&quot;darkblue&quot;</span>, <span class="dt">alpha=</span>.<span class="dv">25</span>,</span>
+<span id="cb37-3"><a href="week-1-exercise.html#cb37-3"></a>              <span class="dt">size=</span><span class="fl">1.25</span>, <span class="dt">width=</span>.<span class="dv">5</span>, <span class="dt">height=</span><span class="fl">1.25</span>) <span class="op">+</span></span>
+<span id="cb37-4"><a href="week-1-exercise.html#cb37-4"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span>lm, <span class="dt">se=</span><span class="ot">FALSE</span>, <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb37-5"><a href="week-1-exercise.html#cb37-5"></a><span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;Implicit Attitudes Towards Sisi&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb37-6"><a href="week-1-exercise.html#cb37-6"></a><span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;Explicit Attitudes Towards Sisi&quot;</span>) <span class="op">+</span></span>
+<span id="cb37-7"><a href="week-1-exercise.html#cb37-7"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>region) <span class="op">+</span></span>
+<span id="cb37-8"><a href="week-1-exercise.html#cb37-8"></a><span class="st">  </span><span class="kw">theme_bw</span>()</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="week-1-exercise.html#cb38-1"></a><span class="co">#it is a lot less intuitive to do this in base R:</span></span>
+<span id="cb38-2"><a href="week-1-exercise.html#cb38-2"></a></span>
+<span id="cb38-3"><a href="week-1-exercise.html#cb38-3"></a>regions &lt;-<span class="st"> </span><span class="kw">sort</span>(<span class="kw">unique</span>(sisi_data<span class="op">$</span>region))</span>
+<span id="cb38-4"><a href="week-1-exercise.html#cb38-4"></a><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>))</span>
+<span id="cb38-5"><a href="week-1-exercise.html#cb38-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="kw">seq_along</span>(regions)) {</span>
+<span id="cb38-6"><a href="week-1-exercise.html#cb38-6"></a>  regst &lt;-<span class="st"> </span>regions[i]</span>
+<span id="cb38-7"><a href="week-1-exercise.html#cb38-7"></a>  dat &lt;-<span class="st"> </span><span class="kw">subset</span>(sisi_data, region<span class="op">==</span>regst)</span>
+<span id="cb38-8"><a href="week-1-exercise.html#cb38-8"></a>  <span class="kw">plot</span>(<span class="kw">jitter</span>(dat<span class="op">$</span>direct_sup,<span class="dv">2</span>) <span class="op">~</span><span class="st"> </span>dat<span class="op">$</span>indirect_sup, </span>
+<span id="cb38-9"><a href="week-1-exercise.html#cb38-9"></a>       <span class="dt">main=</span>regst,</span>
+<span id="cb38-10"><a href="week-1-exercise.html#cb38-10"></a>     <span class="dt">xlab =</span> <span class="st">&quot;Implicit Attitudes Towards Sisi&quot;</span>, </span>
+<span id="cb38-11"><a href="week-1-exercise.html#cb38-11"></a>     <span class="dt">ylab =</span> <span class="st">&quot;Explicit Attitudes Towards Sisi&quot;</span>)</span>
+<span id="cb38-12"><a href="week-1-exercise.html#cb38-12"></a>  <span class="kw">abline</span>(<span class="kw">lm</span>(dat<span class="op">$</span>direct_sup <span class="op">~</span><span class="st"> </span>dat<span class="op">$</span>indirect_sup, </span>
+<span id="cb38-13"><a href="week-1-exercise.html#cb38-13"></a>            <span class="dt">data =</span> dat), <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="dv">3</span>)</span>
+<span id="cb38-14"><a href="week-1-exercise.html#cb38-14"></a>}</span></code></pre></div>
+<p><img src="MMES-2021_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p>What can we conclude after subsetting the data like this. Do the correlations like similar across regions?</p>
+</div>
+<div id="coding-tasks" class="section level2 unnumbered">
+<h2>Coding tasks</h2>
+<ul>
+<li>What is the the correlation between the implicit Sisi attitudes (‘SIAS.test’) and explicit Sisi attitudes item (‘approve_abdel_rev’) for each region of Egypt? The relevent function to compute a correlation coefficient in R is ‘cor()’. Hint: you should subset the data by region.</li>
+<li>Calculate the percentage of Christian and Muslim respondents who exhibit “classic dissociation” in this sample.</li>
+<li>Create scatterplots of explicit and implicit support for Sisi for the Christian and Muslim subsets of the data.</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction-to-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week-2-exercise.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-week1ex.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MMES-2021.pdf"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
